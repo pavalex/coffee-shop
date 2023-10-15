@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page__header" data-test="header">
+    <div class="page__container main-header">
+      <a class="main-header__logo logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg" width="170" height="36">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg" width="82" height="36"><img
+            class="logo__image" src="./images/logo/logo-mobile.svg" width="32" height="36" alt="Логотип «Drink2Go».">
+        </picture>
+        <div class="main-header__text">Интернет-магазин кофейных напитков</div>
+      </a>
+      <ul class="account-list">
+        <li class="account-list__item">
+          <a href="" class="account-list__link">
+            <img class="account-list__image" src="./images/navigation/user.svg" width="16" height="16
+            " alt="Войти.">
+            <span class="account-list__text">Войти</span>
+          </a>
+        </li>
+        <li class="account-list__item">
+          <a href="" class="account-list__link">
+            <img class="account-list__image" src="./images/navigation/basket.svg" width="16" height="16" alt="Корзина.">
+            <span class="account-list__text">Корзина</span>
+          </a>
+        </li>
+      </ul>
+      <nav class="main-nav">
+        <button class="main-nav__open" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="site-list main-nav__mobile">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index site-list__link--index-active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index" href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--index" href="about.html">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main main">Основа</main>
+
+  <footer class="page__footer main-footer" data-test="footer">Подвал</footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>

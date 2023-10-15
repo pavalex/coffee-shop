@@ -1,0 +1,52 @@
+@import "global/variables";
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 12px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.main-header__logo {
+  width: 200px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    width: 316px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 162px;
+  }
+}
+
+.main-header__text {
+  width: 126px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-header__block {
+  display: flex;
+  justify-content: space-between;
+}

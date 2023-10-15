@@ -1,1 +1,29 @@
-/* здесь используйте глобальные переменные */
+// Шрифты
+$font-global: "Montserrat", sans-serif;
+
+// Цвета
+$color-text: #333333;
+$color-background: #68b738;
+$color-background-hover: #5eaa2f;
+$color-background-second: #f2f2f2;
+$color-background-third: #eaeaea;
+$color-title: #000000;
+$color-title-hover: rgba(0, 0, 0, 0.3);
+$color-title-second: #ffffff;
+$color-title-second-hover: rgba(255, 255, 255, 0.3);
+$color-subtitle: #222222;
+$color-subtitle-second: #111111;
+$color-border: #666666;
+$color-border-second: #e6e6e6;
+$color-border-third: #d9d9d9;
+$color-border-fifth: #cdcdcd;
+$color-border-eighth: #ebebeb;
+$color-show-more: #d3d3d3;
+$color-border-input: #e7e7e7;
+$color-border-input-error: #ff8282;
+$color-control: #cdcdcd;
+$color-control-hover: #bababa;
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;

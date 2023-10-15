@@ -1,0 +1,86 @@
+@import "global/variables";
+@import "global/mixins";
+
+.site-list {
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.site-list__item {
+  text-decoration: none;
+  border-bottom: 1px solid $color-border-second;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid $color-border-second;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  color: $color-title;
+  padding: 24px 0;
+  transition: all 0.2s;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $color-text;
+    }
+  }
+
+  &--index-active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-background;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $color-title-second;
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-background;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 0;
+  }
+
+  &:hover {
+    @media (min-width: $tablet-width) {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      opacity: 0.3;
+    }
+  }
+}
