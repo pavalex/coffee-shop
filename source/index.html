@@ -58,7 +58,48 @@
     </div>
   </header>
 
-  <main class="page__main main">Основа</main>
+  <main class="page__main main">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+    <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Слайдер</h2>
+      <div class="page__container">
+        <div class="hero__slider slider">
+          <div class="slider__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./images/slider/flat_white_desktop.png" width="600" height="600">
+              <source media="(min-width: 768px)" srcset="./images/slider/flat_white_tablet.png" width="476" height="476" alt="flat_white.">
+              <img class="slider__picture" src="./images/slider/flat_white_mobile.png" width="280" height="280" alt="flat_white.">
+            </picture>
+          </div>
+          <div class="slider__text">
+            <p class="slider__new">Новинка!</p>
+            <p class="slider__header">Декаф Флэт Уайт</p>
+            <p class="slider__description">
+              Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня
+            </p>
+            <div class="slider__price price">
+              <span class="price__old"><del>295</del>&#8381;</span>
+              <span class="price__new">225&#8381;</span>
+              <a href="" class="price__button button">Заказать</a>
+            </div>
+          </div>
+        </div>
+          <a class="slider-button-prev" href="#">
+            <img class="slider__arrow" src="./images/slider/slider-arrow.svg" width="11" height="20" alt="arrow-prev.">
+          </a>
+          <a class="slider-button-next" href="#">
+            <img class="slider__arrow slider__arrow--next" src="./images/slider/slider-arrow.svg" width="11" height="20" alt="arrow-next.">
+          </a>
+        <ul class="slider-pagination">
+          <li class="slider-pagination__item slider-pagination__item--active"></li>
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
   <footer class="page__footer main-footer" data-test="footer">Подвал</footer>
 

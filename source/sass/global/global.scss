@@ -21,3 +21,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: $color-primary;
+  color: $color-second;
+  font-size: 16px;
+  font-weight: 400;
+}

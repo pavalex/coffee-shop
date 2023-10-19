@@ -1,0 +1,125 @@
+@import "global/variables";
+
+.slider__text {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align-last: left;
+  }
+}
+
+.slider__new {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.slider__header {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+    margin-bottom: 16px;
+  }
+}
+
+.slider__description {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 608px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.price__old  {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $color-primary;
+  margin-right: 6px;
+}
+
+.price__new {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.slider-button-prev {
+  position: absolute;
+  top: 290px;
+  left: 4px;
+
+  @media (min-width: $tablet-width) {
+    top: 250px;
+  }
+}
+
+.slider-button-next {
+  position: absolute;
+  top: 290px;
+  right: 4px;
+
+  @media (min-width: $tablet-width) {
+    top: 250px;
+  }
+}
+
+.slider__arrow {
+  &--next {
+    transform: rotate(180deg);
+  }
+}
+
+.slider-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {width: 202px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 8px;
+    list-style: none;
+  }
+}
+
+.slider-pagination__item  {
+  width: 62px;
+  height: 4px;
+  background-color: $color-second;
+  cursor: pointer;
+
+  &--active {
+    background-color: $color-primary
+  }
+}
+
+
