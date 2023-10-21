@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page__header" data-test="header">
+    <div class="page__container main-header">
+      <a class="main-header__logo logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg" width="170" height="36">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg" width="82" height="36"><img
+            class="logo__image" src="./images/logo/logo-mobile.svg" width="32" height="36" alt="Логотип «Drink2Go».">
+        </picture>
+        <div class="main-header__text">Интернет-магазин кофейных напитков</div>
+      </a>
+      <ul class="account-list">
+        <li class="account-list__item">
+          <a href="" class="account-list__link">
+            <img class="account-list__image" src="./images/navigation/user.svg" width="16" height="16
+            " alt="Войти.">
+            <span class="account-list__text">Войти</span>
+          </a>
+        </li>
+        <li class="account-list__item">
+          <a href="" class="account-list__link">
+            <img class="account-list__image" src="./images/navigation/basket.svg" width="16" height="16" alt="Корзина.">
+            <span class="account-list__text">Корзина</span>
+          </a>
+        </li>
+      </ul>
+      <nav class="main-nav">
+        <button class="main-nav__open" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="site-list main-nav__mobile">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="about.html">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main main">
+    <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
+    <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Слайдер</h2>
+      <div class="page__container">
+        <div class="hero__slider slider">
+          <div class="slider__img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./images/slider/flat_white_desktop.png" width="600" height="600">
+              <source media="(min-width: 768px)" srcset="./images/slider/flat_white_tablet.png" width="476" height="476" alt="flat_white.">
+              <img class="slider__picture" src="./images/slider/flat_white_mobile.png" width="280" height="280" alt="flat_white.">
+            </picture>
+          </div>
+          <div class="slider__text">
+            <p class="slider__new">Новинка!</p>
+            <p class="slider__header">Декаф Флэт Уайт</p>
+            <p class="slider__description">
+              Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня
+            </p>
+            <div class="slider__price price">
+              <span class="price__old"><del>295</del>&#8381;</span>
+              <span class="price__new">225&#8381;</span>
+              <a href="" class="price__button button">Заказать</a>
+            </div>
+          </div>
+        </div>
+          <a class="slider-button-prev" href="#">
+            <img class="slider__arrow" src="./images/slider/slider-arrow.svg" width="11" height="20" alt="arrow-prev.">
+          </a>
+          <a class="slider-button-next" href="#">
+            <img class="slider__arrow slider__arrow--next" src="./images/slider/slider-arrow.svg" width="11" height="20" alt="arrow-next.">
+          </a>
+        <ul class="slider-pagination">
+          <li class="slider-pagination__item slider-pagination__item--active"></li>
+          <li class="slider-pagination__item"></li>
+          <li class="slider-pagination__item"></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer main-footer" data-test="footer">Подвал</footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>
