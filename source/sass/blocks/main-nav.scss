@@ -26,7 +26,7 @@
     left: 0;
     z-index: 1;
     display: block;
-    background-color: $color-title-second;
+    background-color: $color-second;
 
     @media (min-width: $desktop-width) {
       background-color: transparent;
@@ -47,7 +47,7 @@
   right: 20px;
   height: 1.5px;
   width: 24px;
-  background-color: $color-title;
+  background-color: $color-text;
   border: none;
   cursor: pointer;
 
@@ -58,7 +58,7 @@
     right: 0;
     height: 1.5px;
     width: 24px;
-    background-color: $color-title;
+    background-color: $color-text;
     border: none;
 
     @media (min-width: $tablet-width) {
@@ -73,7 +73,7 @@
     bottom: -8px;
     height: 1.5px;
     width: 24px;
-    background-color: $color-title;
+    background-color: $color-text;
     border: none;
 
     @media (min-width: $tablet-width) {
@@ -99,7 +99,7 @@
   right: 20px;
   height: 1.5px;
   width: 24px;
-  background-color: $color-title;
+  background-color: $color-text;
   border: none;
   transform: rotate(45deg);
   cursor: pointer;
@@ -111,7 +111,7 @@
     right: 0;
     height: 1.5px;
     width: 24px;
-    background-color: $color-title;
+    background-color: $color-text;
     border: none;
     transform: rotate(90deg);
 
@@ -132,7 +132,7 @@
   right: 20px;
   height: 1.5px;
   width: 24px;
-  background-color: $color-title;
+  background-color: $color-text;
   border: none;
   transform: rotate(45deg);
   cursor: pointer;
@@ -144,7 +144,7 @@
     right: 0;
     height: 1.5px;
     width: 24px;
-    background-color: $color-title;
+    background-color: $color-text;
     border: none;
     transform: rotate(90deg);
   }
